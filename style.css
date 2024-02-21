@@ -83,8 +83,7 @@ section.hero__Section .hero__child:first-child {
 }
 
 section.hero__Section .hero__child:last-child {
-  /* background: transparent url("./assets/image1.png") 100% 100% no-repeat; */
-  background-image: url("https://images.pexels.com/photos/792381/pexels-photo-792381.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+  background-image: url("./assets/image1.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -166,8 +165,85 @@ section.hero__Section .hero__child:last-child {
   transform: translate(50%, 50%);
   border-radius: 1.6rem;
   border: 1px solid black;
-  background-image: url("./assets/Screenshot\ 2024-02-21\ 160724.png");
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
+  display: block;
+  padding: 4rem;
+  position: relative !important;
+}
+
+.hidden_notification h2 {
+  font-size: 4rem !important;
+  color: #495057;
+}
+
+.hidden_notification h4 {
+  color: #adb5bd;
+  font-size: 1.3rem;
+  margin-bottom: 3rem;
+}
+
+.hidden_notification p {
+  height: max-content;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.field {
+  display: flex;
+  gap: 3rem;
+  width: 100%;
+  padding: 1.5rem 4rem 1.5rem 3rem;
+  border-radius: 4rem;
+  background-color: white;
+  font-weight: 900;
+  font-size: 2rem;
+  color: #495057;
+}
+
+input {
+  width: inherit;
+  font-size: 2rem;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid black;
+  outline: none;
+}
+
+button {
+  font-size: 2rem;
+  width: max-content;
+  border: none;
+  padding: 1rem 1.5rem;
+  border-radius: 2rem;
+  background-color: #000000;
+  color: white;
+  cursor: pointer;
+}
+
+p.submitted_area {
+  margin-top: 2rem;
+  width: 100%;
+  display: flex;
+  align-items: end;
+}
+
+.cancel_area {
+  width: 100%;
+  font-size: 4rem;
+  position: absolute;
+  align-items: end;
+  top: 0%;
+  padding: 2%;
+  right: 0%;
+}
+
+:-ms-input-placeholder {
+  border: none;
+  outline: none;
+}
+
+::-webkit-input-placeholder {
+  border: none;
+  outline: none;
 }
